@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		33D38855EF23F1A12EF28481 /* Pods_ccccccc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD3F96212D740879DA843CB /* Pods_ccccccc.framework */; };
+		AA213C6026567DC400BC5997 /* LoggingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA213C5F26567DC400BC5997 /* LoggingHelper.swift */; };
 		AAFECB4126550A0400922FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4026550A0400922FFA /* AppDelegate.swift */; };
 		AAFECB4326550A0400922FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4226550A0400922FFA /* SceneDelegate.swift */; };
 		AAFECB4526550A0400922FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4426550A0400922FFA /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65339D313272978C57D5FD75 /* Pods-ccccccc.wuttafuk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ccccccc.wuttafuk.xcconfig"; path = "Target Support Files/Pods-ccccccc/Pods-ccccccc.wuttafuk.xcconfig"; sourceTree = "<group>"; };
+		AA213C5F26567DC400BC5997 /* LoggingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingHelper.swift; sourceTree = "<group>"; };
 		AAFECB3D26550A0400922FFA /* ccccccc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ccccccc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFECB4026550A0400922FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFECB4226550A0400922FFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 			children = (
 				F9C72056BD8D0C33BC4A8D29 /* Pods-ccccccc.debug.xcconfig */,
 				EB038FBA12C3BDD87B62759B /* Pods-ccccccc.release.xcconfig */,
+				65339D313272978C57D5FD75 /* Pods-ccccccc.wuttafuk.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -82,6 +86,7 @@
 			children = (
 				AAFECB4026550A0400922FFA /* AppDelegate.swift */,
 				AAFECB4226550A0400922FFA /* SceneDelegate.swift */,
+				AA213C5F26567DC400BC5997 /* LoggingHelper.swift */,
 				AAFECB4426550A0400922FFA /* ViewController.swift */,
 				AAFECB4626550A0400922FFA /* Main.storyboard */,
 				AAFECB4926550A0800922FFA /* Assets.xcassets */,
@@ -102,6 +107,7 @@
 				AAFECB3926550A0400922FFA /* Sources */,
 				AAFECB3A26550A0400922FFA /* Frameworks */,
 				AAFECB3B26550A0400922FFA /* Resources */,
+				BA33ADAFAD4AE5769D82BD66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +164,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BA33ADAFAD4AE5769D82BD66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C183186B8014C305C19860A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFECB4526550A0400922FFA /* ViewController.swift in Sources */,
+				AA213C6026567DC400BC5997 /* LoggingHelper.swift in Sources */,
 				AAFECB4126550A0400922FFA /* AppDelegate.swift in Sources */,
 				AAFECB4326550A0400922FFA /* SceneDelegate.swift in Sources */,
 			);
@@ -272,7 +296,7 @@
 		};
 		AA213C5E2656622700BC5997 /* Wuttafuk */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB038FBA12C3BDD87B62759B /* Pods-ccccccc.release.xcconfig */;
+			baseConfigurationReference = 65339D313272978C57D5FD75 /* Pods-ccccccc.wuttafuk.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
