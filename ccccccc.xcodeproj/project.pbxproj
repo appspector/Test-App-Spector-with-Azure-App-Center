@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		33D38855EF23F1A12EF28481 /* Pods_ccccccc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD3F96212D740879DA843CB /* Pods_ccccccc.framework */; };
+		AA213C632656A01E00BC5997 /* AppSpector in Frameworks */ = {isa = PBXBuildFile; productRef = AA213C622656A01E00BC5997 /* AppSpector */; };
+		AA213C642656A07900BC5997 /* LoggingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA213C5F26567DC400BC5997 /* LoggingHelper.swift */; };
 		AAFECB4126550A0400922FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4026550A0400922FFA /* AppDelegate.swift */; };
 		AAFECB4326550A0400922FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4226550A0400922FFA /* SceneDelegate.swift */; };
 		AAFECB4526550A0400922FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4426550A0400922FFA /* ViewController.swift */; };
@@ -38,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D38855EF23F1A12EF28481 /* Pods_ccccccc.framework in Frameworks */,
+				AA213C632656A01E00BC5997 /* AppSpector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +115,9 @@
 			dependencies = (
 			);
 			name = ccccccc;
+			packageProductDependencies = (
+				AA213C622656A01E00BC5997 /* AppSpector */,
+			);
 			productName = ccccccc;
 			productReference = AAFECB3D26550A0400922FFA /* ccccccc.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +145,9 @@
 				Base,
 			);
 			mainGroup = AAFECB3426550A0400922FFA;
+			packageReferences = (
+				AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */,
+			);
 			productRefGroup = AAFECB3E26550A0400922FFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFECB4526550A0400922FFA /* ViewController.swift in Sources */,
+				AA213C642656A07900BC5997 /* LoggingHelper.swift in Sources */,
 				AAFECB4126550A0400922FFA /* AppDelegate.swift in Sources */,
 				AAFECB4326550A0400922FFA /* SceneDelegate.swift in Sources */,
 			);
@@ -480,6 +490,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appspector/ios-sdk-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA213C622656A01E00BC5997 /* AppSpector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */;
+			productName = AppSpector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAFECB3526550A0400922FFA /* Project object */;
 }

@@ -36,15 +36,12 @@ extension OSLogType {
 
 class AppSpectorClass {
     init() {
-        
-        let config = AppSpectorConfig(apiKey: "ios_NmVkNmQ3OTItYTIwNS00NTk2LTkxNTAtNTMwMGEzOGNlM2M3")
-
-//        let config = AppSpectorConfig(apiKey: "ios_NmVkNmQ3OTItYTIwNS00NTk2LTkxNTAtNTMwMGEzOGNlM2M3", monitorIDs: [.analytics, .customEvents, .environment, .http, .fileSystem, .logs, .performance, .screenshot, .userdefaults])
+        let config = AppSpectorConfig(apiKey: "ios_NmVkNmQ3OTItYTIwNS00NTk2LTkxNTAtNTMwMGEzOGNlM2M3", monitorIDs: [.analytics, .customEvents, .environment, .http, .fileSystem, .logs, .performance, .screenshot, .userdefaults])
         config.metadata = [DeviceNameKey: UIDevice.current.name]
-        config.startCallback = { url in print("Session url: \(url.absoluteString)") }
 
         AppSpector.run(with: config)
     }
+
     private func logEvent(message: String, file: StaticString, function: StaticString, line: UInt, type: OSLogType = .default) {
         let path = file.withUTF8Buffer {
             String(decoding: $0, as: UTF8.self)
@@ -65,6 +62,7 @@ class AppSpectorClass {
             "Message": message,
         ]
         AppSpector.sendCustomEvent(with: payload)
+        print(message)
     }
 
     func debug(_ message: String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line) {
