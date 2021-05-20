@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           Crashes.self
         ])
         
+        logger.info("AppDelegate start")
+
 
         return true
     }
@@ -32,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
 
 
-        logger.info("AppDelegate start")
 
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
