@@ -7,6 +7,6 @@ target 'ccccccc' do
 
   # Pods for ccccccc
 pod 'AppCenter'
-pod 'AppSpectorSDK'
+#pod 'AppSpectorSDK'
 
 end

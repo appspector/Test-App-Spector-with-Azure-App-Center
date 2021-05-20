@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AppSpectorSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-ccccccc.xcscheme</key>
 		<dict>
 			<key>isShown</key>

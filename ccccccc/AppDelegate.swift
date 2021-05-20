@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           Crashes.self
         ])
         
-        logger.info("AppDelegate start")
+//        logger.info("AppDelegate start")
 
 
         return true
