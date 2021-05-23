@@ -7,17 +7,21 @@ PODS:
   - AppCenter/Core (4.1.1)
   - AppCenter/Crashes (4.1.1):
     - AppCenter/Core
+  - AppSpectorSDK (1.4.1)
 
 DEPENDENCIES:
   - AppCenter
+  - AppSpectorSDK
 
 SPEC REPOS:
   trunk:
     - AppCenter
+    - AppSpectorSDK
 
 SPEC CHECKSUMS:
   AppCenter: cd53e3ed3563cc720bcb806c9731a12389b40d44
+  AppSpectorSDK: 4a2d1e7a068a671fa0551653c9be3f09190cc062
 
-PODFILE CHECKSUM: 0adefb9b3104872179e882f875d35f4a87070249
+PODFILE CHECKSUM: cf9dc38b09cd22843a9bcae1a0c39e66a5e953fe
 
 COCOAPODS: 1.10.1

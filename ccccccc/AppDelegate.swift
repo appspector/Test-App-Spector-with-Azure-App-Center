@@ -7,6 +7,7 @@
 
 import UIKit
 import AppCenter
+import AppSpectorSDK
 import AppCenterAnalytics
 import AppCenterCrashes
 
@@ -24,8 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ])
         
         logger.info("AppDelegate start")
-
-
+        
         return true
     }
 

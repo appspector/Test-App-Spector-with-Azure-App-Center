@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		33D38855EF23F1A12EF28481 /* Pods_ccccccc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD3F96212D740879DA843CB /* Pods_ccccccc.framework */; };
-		AA213C632656A01E00BC5997 /* AppSpector in Frameworks */ = {isa = PBXBuildFile; productRef = AA213C622656A01E00BC5997 /* AppSpector */; };
 		AA213C642656A07900BC5997 /* LoggingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA213C5F26567DC400BC5997 /* LoggingHelper.swift */; };
 		AAFECB4126550A0400922FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4026550A0400922FFA /* AppDelegate.swift */; };
 		AAFECB4326550A0400922FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFECB4226550A0400922FFA /* SceneDelegate.swift */; };
@@ -40,7 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D38855EF23F1A12EF28481 /* Pods_ccccccc.framework in Frameworks */,
-				AA213C632656A01E00BC5997 /* AppSpector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,15 +107,13 @@
 				AAFECB3926550A0400922FFA /* Sources */,
 				AAFECB3A26550A0400922FFA /* Frameworks */,
 				AAFECB3B26550A0400922FFA /* Resources */,
+				E77A7F3DF7F019E1B91FC4AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ccccccc;
-			packageProductDependencies = (
-				AA213C622656A01E00BC5997 /* AppSpector */,
-			);
 			productName = ccccccc;
 			productReference = AAFECB3D26550A0400922FFA /* ccccccc.app */;
 			productType = "com.apple.product-type.application";
@@ -145,9 +141,6 @@
 				Base,
 			);
 			mainGroup = AAFECB3426550A0400922FFA;
-			packageReferences = (
-				AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */,
-			);
 			productRefGroup = AAFECB3E26550A0400922FFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,6 +184,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77A7F3DF7F019E1B91FC4AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ccccccc/Pods-ccccccc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -490,25 +500,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/appspector/ios-sdk-spm";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AA213C622656A01E00BC5997 /* AppSpector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AA213C612656A01E00BC5997 /* XCRemoteSwiftPackageReference "ios-sdk-spm" */;
-			productName = AppSpector;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAFECB3526550A0400922FFA /* Project object */;
 }
