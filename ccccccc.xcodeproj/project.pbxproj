@@ -302,16 +302,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 33AUWD68J4;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
 				INFOPLIST_FILE = ccccccc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zuehlke.TestForAppSpector;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appspector.test-ingo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TestForAppSpectorDeveloper;
+				PROVISIONING_PROFILE_SPECIFIER = "AppSpector wildcard development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,16 +441,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 33AUWD68J4;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
 				INFOPLIST_FILE = ccccccc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zuehlke.TestForAppSpector;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appspector.test-ingo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TestForAppSpectorDeveloper;
+				PROVISIONING_PROFILE_SPECIFIER = "Ingo dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,18 +462,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 33AUWD68J4;
+				DEVELOPMENT_TEAM = EEJA65ZWYD;
 				INFOPLIST_FILE = ccccccc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zuehlke.TestForAppSpector;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appspector.test-ingo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TestForAppSpectorDeveloper;
+				PROVISIONING_PROFILE_SPECIFIER = "Ingo ad-hoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
